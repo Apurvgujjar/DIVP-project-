@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Action AI Assistant 🤖</title>
+    
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Chat UI -->
+    <div class="w-full max-w-3xl h-[90vh] bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-2xl border border-green-500/30 flex flex-col z-10">
+        
+        <!-- Header Section -->
+        <header class="p-5 border-b border-green-400/50 text-center bg-green-900/80">
+            <h1 class="text-2xl md:text-3xl font-bold text-green-100">Climate Action AI Assistant 🤖</h1>
+        </header>
+
+        <!-- Chat Container -->
+        <main id="chat-container" class="flex-1 p-6 overflow-y-auto space-y-6">
+            <!-- Initial Bot Message -->
+            <div class="flex items-start gap-3 justify-start chat-bubble">
+                <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-lg flex-shrink-0">🤖</div>
+                <div class="bg-gray-700 rounded-lg p-4 max-w-lg">
+                    <p class="text-sm">Hello! I am an AI assistant focused on Climate Action. How can I help you build a sustainable future today?</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Input Form -->
+        <footer class="p-4 border-t border-green-400/50">
+            <form id="chat-form" class="flex items-center gap-3">
+                <input type="text" id="user-input" class="flex-1 bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Ask about climate solutions...">
+                <button type="submit" id="send-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold p-3 rounded-lg transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </form>
+            <div class="text-center text-xs text-gray-500 mt-4">
+                <p>Developed by Gujjar Apurv</p>
+                <p>Government Engineering College, Gandhinagar - Sector 28 | Enrollment: 220130111034</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- External JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Your Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
